@@ -1,0 +1,87 @@
+body {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.header,
+.marketing,
+.footer {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.header {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.footer {
+	padding-top: 19px;
+	color: #777;
+	border-top: 1px solid #e5e5e5;
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 730px;
+	}
+}
+
+.marketing {
+	margin: 40px 0;
+}
+
+.marketing p + h4 {
+	margin-top: 28px;
+}
+
+@media screen and (min-width: 768px) {
+	.header,
+	.marketing,
+	.footer {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.header {
+		margin-bottom: 30px;
+	}
+
+	.jumbotron {
+		border-bottom: 0;
+	}
+}
+
+.standout {
+		background-color: #5cb85c;
+		border-radius: 5px;
+		margin: 0 10px;
+}
+
+.classic {
+		background-color: #337ab7;
+		border-radius: 5px;
+		margin: 0 10px;
+}
+
+.premium {
+		background-color: #d9534f;
+		border-radius: 5px;
+		margin: 0 10px;
+}
+
+.section {
+	background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.name {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.total {
+    font-size: 16px;
+}
