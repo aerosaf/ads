@@ -62,7 +62,7 @@ class AdsApp
         foreach ($company as $name => $types) {
             foreach ($types as $type => $quantity) {
                 // Unilever gets a 3 for 2 deals on Classic Ads
-                if ( in_array( $name, array_keys( $Client->eligible('freeClassic') ) ) ) {
+                if ( $type = 'classic' && in_array( $name, array_keys( $Client->eligible('freeClassic') ) ) ) {
                     if ( $quantity >= $Client->eligible('freeClassic', $name, 'requirement') ) {
                         $freePacks['classic'] += floor($quantity / $Client->eligible('freeClassic', $name, 'requirement') );
                     }
